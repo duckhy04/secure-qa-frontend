@@ -3,10 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+// H
 .h1 {
     @apply text-dodger-blue text-4xl text-center font-bold uppercase
 }
 
+// Button
 .button {
     @apply p-2 md:px-4 text-dodger-blue font-bold border-2 border-dodger-blue rounded-md outline-none transition-all
 }
@@ -15,22 +17,36 @@
     @apply text-white bg-dodger-blue
 }
 
+// Form
+.form-group {
+    @apply flex flex-col p-2
+}
+
+.form-icon-label {
+    @apply flex items-center gap-1 my-1
+}
+
 .form-label {
     @apply text-safety-orange font-bold
 }
 
 .form-input {
-    @apply w-72 p-2 outline-none border-b-2 border-white transition-all
+    @apply w-full p-2 outline-none border-b-2 border-white transition-all
 }
 
 .form-input:not(:placeholder-shown) {
     @apply bg-light-grayish-blue font-bold rounded-t-md
 }
 
+.form-input-required {
+    @apply text-fire-engine-red
+}
+
 .form-input:focus, .form-input:hover, .nav-link:hover {
     @apply border-b-2 border-dodger-blue
 }
 
+// A
 .a-link {
     @apply hidden md:block transition-all
 }
@@ -43,28 +59,27 @@
     @apply underline
 }
 
+// Nav link
 .nav-link {
     @apply flex justify-center md:justify-start items-center gap-1 py-2 text-black text-base border-b-2 border-white transition-all
 }
 
+// Menu
 .parent-menu {
     @apply text-lg text-center md:text-left text-dark-grey border-b-2
 }
 
+// Icon
 .icon {
-    @apply cursor-pointer
+    @apply cursor-pointer text-dodger-blue
 }
 
-.icon-lock, .icon-lock_reset, .icon-badge {
+.icon-lock, .icon-lock_reset, .icon-badge, .icon-email {
     @apply text-safety-orange
 }
 
 .icon-star {
     @apply text-canary-yellow
-}
-
-.icon-home, .icon-search, .icon-notifications {
-    @apply text-dodger-blue
 }
 
 .icon-forum {
