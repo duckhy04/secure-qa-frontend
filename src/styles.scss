@@ -3,20 +3,60 @@
 @tailwind components;
 @tailwind utilities;
 
-.input {
-    @apply p-2 outline-none border-b-2 border-white transition-all
+.h1 {
+    @apply text-dodger-blue text-4xl text-center font-bold uppercase
 }
 
-.input:focus, .input:hover, .nav-link:hover {
+.button {
+    @apply p-2 md:px-4 text-dodger-blue font-bold border-2 border-dodger-blue rounded-md outline-none transition-all
+}
+
+.button:hover, .button:focus {
+    @apply text-white bg-dodger-blue
+}
+
+.form-label {
+    @apply text-safety-orange font-bold
+}
+
+.form-input {
+    @apply w-72 p-2 outline-none border-b-2 border-white transition-all
+}
+
+.form-input:not(:placeholder-shown) {
+    @apply bg-light-grayish-blue font-bold rounded-t-md
+}
+
+.form-input:focus, .form-input:hover, .nav-link:hover {
     @apply border-b-2 border-dodger-blue
 }
 
+.a-link {
+    @apply hidden md:block transition-all
+}
+
+.a-auth {
+    @apply text-dodger-blue transition-all
+}
+
+.a-auth:hover {
+    @apply underline
+}
+
 .nav-link {
-    @apply flex items-center gap-1 py-2 text-black text-base border-b-2 border-white transition-all
+    @apply flex justify-center md:justify-start items-center gap-1 py-2 text-black text-base border-b-2 border-white transition-all
 }
 
 .parent-menu {
-    @apply text-lg text-dark-grey border-b-2
+    @apply text-lg text-center md:text-left text-dark-grey border-b-2
+}
+
+.icon {
+    @apply cursor-pointer
+}
+
+.icon-lock, .icon-lock_reset, .icon-badge {
+    @apply text-safety-orange
 }
 
 .icon-star {
