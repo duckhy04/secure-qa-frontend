@@ -3,12 +3,12 @@
     <aside class="border p-4">
         <div>
             <img src="" alt="">
-            
+
             <section class="flex items-center justify-center text-dodger-blue font-bold gap-1">
                 <span class="material-symbols-outlined icon icon-shield text-4xl md:text-3xl">
                     shield
                 </span>
-                
+
                 <h1 class="hidden md:block md:text-2xl">Secure Q&A</h1>
             </section>
         </div>
@@ -42,6 +42,12 @@
                         forum
                     </span>
                     <a class="a-link" routerLink="home">Discussion</a>
+                </li>
+                <li *ngIf="isAdmin" class="nav-link">
+                    <span class="material-symbols-outlined icon icon-forum">
+                        forum
+                    </span>
+                    <a class="a-link" routerLink="user-manager">User Manager</a>
                 </li>
             </ul>
         </nav>
@@ -77,7 +83,7 @@
                         contact_support
                     </span>
                 </button>
-                <span class="material-symbols-outlined icon icon-notifications">
+                <span class="material-symbols-outlined icon icon-notification p-2 rounded-full transition-all">
                     notifications
                 </span>
                 <div class="flex items-center gap-2">
