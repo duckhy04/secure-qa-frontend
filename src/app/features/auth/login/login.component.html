@@ -1,0 +1,44 @@
+<!-- <p>login works!</p> -->
+<div class="flex justify-center items-center bg-white p-2 rounded-lg shadow-lg">
+    <div class="flex flex-col justify-center items-center gap-4 px-16 py-32 border-r-2">
+        <h1 class="h1">Login</h1>
+        <div class="flex gap-2">
+            <app-button label="Google"></app-button>
+            <app-button label="Facebook"></app-button>
+        </div>
+        <span>You do not have an account? <a class="a-auth" routerLink="/auth/sign-up">Sign up</a></span>
+    </div>
+
+    <div class="pl-4">
+        <form class="">
+
+            <!-- Username -->
+            <div class="flex flex-col p-2">
+                <div class="flex items-center gap-1 my-1">
+                    <span class="material-symbols-outlined icon icon-badge">
+                        badge
+                    </span>
+                    <label class="form-label" for="username">Username</label>
+                </div>
+                
+                <input class="form-input" id="username" type="text" placeholder="Username">
+            </div>
+            
+            <!-- Password -->
+            <div class="flex flex-col p-2">
+                <div class="flex items-center gap-1 my-1">
+                    <span class="material-symbols-outlined icon icon-lock">
+                        lock
+                    </span>
+                    <label class="form-label" for="password">Password</label>
+                </div>
+                
+                <input class="form-input" id="password" type="password" placeholder="Password">
+            </div>
+
+            <div class="flex justify-center">
+                <app-button label="Login" type="submit"></app-button>
+            </div>
+        </form>
+    </div>
+</div>
