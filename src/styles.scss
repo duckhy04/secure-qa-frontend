@@ -2,3 +2,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.input {
+    @apply p-2 outline-none border-b-2 border-white transition-all
+}
+
+.input:focus, .input:hover, .nav-link:hover {
+    @apply border-b-2 border-dodger-blue
+}
+
+.nav-link {
+    @apply flex items-center gap-1 py-2 text-black text-base border-b-2 border-white transition-all
+}
+
+.parent-menu {
+    @apply text-lg text-dark-grey border-b-2
+}
+
+.icon-star {
+    @apply text-canary-yellow
+}
+
+.icon-home, .icon-search, .icon-notifications {
+    @apply text-dodger-blue
+}
+
+.icon-forum {
+    @apply text-blue-violet
+}
+
+.icon-group {
+    @apply text-sea-green;
+}
