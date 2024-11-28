@@ -14,6 +14,7 @@ module.exports = {
         'diamond': '#B9F2FF',
         'safety-orange': '#FF6700',
         'light-grayish-blue': '#E8F0FE',
+        'fire-engine-red': '#CE2029',
       },
       backgroundImage: {
         'cucumber-water': 'linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%)',
