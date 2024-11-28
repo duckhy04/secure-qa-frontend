@@ -11,6 +11,12 @@ module.exports = {
         'canary-yellow': '#FFEF00',
         'sea-green': '#2EB857',
         'blue-violet': '#8A2BE2',
+        'diamond': '#B9F2FF',
+        'safety-orange': '#FF6700',
+        'light-grayish-blue': '#E8F0FE',
+      },
+      backgroundImage: {
+        'cucumber-water': 'linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%)',
       }
     },
   },
