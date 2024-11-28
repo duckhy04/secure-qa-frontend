@@ -1,0 +1,14 @@
+<div class="toast-container" *ngIf="toast">
+    
+    <div class="toast" [ngClass]="toast.type">
+        <span *ngIf="toast.type == 'success'" class="material-symbols-outlined">
+            check_circle
+        </span>
+        
+        <span *ngIf="toast.type == 'error'" class="material-symbols-outlined">
+            error
+        </span>
+        
+        {{ toast.message }}
+    </div>
+</div>
